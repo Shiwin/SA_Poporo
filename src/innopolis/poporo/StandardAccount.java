@@ -1,9 +1,10 @@
 package innopolis.poporo;
 
 
-public class StandardAccount {
-    public void openAccount() {
+public class StandardAccount extends Account{
+    public User openAccount() {
 
+        return null;
     }
 
     public void transmit(ContentItem c1) {
