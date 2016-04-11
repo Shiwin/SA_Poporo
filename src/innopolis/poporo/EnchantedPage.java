@@ -3,7 +3,7 @@ package innopolis.poporo;
 /**
  * Created by ivan on 11.04.16.
  */
-public class EnchantedPage {
+public class EnchantedPage  extends Page{
     public EnchantedPage(EnchantedContentItem c) {
 
     }
@@ -12,13 +12,18 @@ public class EnchantedPage {
         return false;
     }
 
-    public void upload(EnchantedContentItem c1) {
+    public void upload(ContentItem c1) {
     }
 
-    public void remove(EnchantedContentItem c1) {
+    public void remove(ContentItem c1) {
     }
 
-    public boolean containsContentItem(EnchantedContentItem c1) {
+    public boolean containsContentItem(ContentItem c1) {
         return false;
+    }
+
+    @Override
+    public void Draw() {
+
     }
 }

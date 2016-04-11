@@ -3,8 +3,8 @@ package innopolis.poporo;
 /**
  * Created by ivan on 11.04.16.
  */
-public class StandardPage {
-    public StandardPage(StandardContentItem c) {
+public class StandardPage extends Page {
+    public StandardPage(ContentItem c) {
 
     }
 
@@ -12,15 +12,25 @@ public class StandardPage {
         return false;
     }
 
-    public void upload(StandardContentItem c1) {
+    @Override
+    public void upload(ContentItem c1) {
 
     }
 
-    public void remove(StandardContentItem c1) {
+    @Override
+    public void remove(ContentItem c1) {
 
     }
 
-    public boolean containsContentItem(StandardContentItem c1) {
+    @Override
+    public boolean containsContentItem(ContentItem c1) {
         return false;
     }
+
+    @Override
+    public void Draw() {
+
+    }
+
+
 }

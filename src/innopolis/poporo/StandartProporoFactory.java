@@ -6,12 +6,12 @@ package innopolis.poporo;
 public class StandartProporoFactory extends PoporoFactory {
     @Override
     public ContentItem createContentItem() {
-        return null;
+        return new StandardContentItem();
     }
 
     @Override
     public Page createPage() {
-        return null;
+        return new StandardPage(new StandardContentItem());
     }
 
     @Override
