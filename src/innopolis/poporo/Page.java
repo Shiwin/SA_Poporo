@@ -1,18 +1,36 @@
 package innopolis.poporo;
 
+import java.util.ArrayList;
+
 /**
  * Created by ivan on 11.04.16.
  */
 public abstract class Page {
 
-    public abstract boolean isEmptyPage();
+    protected User user;
+    protected ArrayList<ContentItem> content;
 
-    public abstract void upload(ContentItem c1);
 
-    public abstract void remove(ContentItem c1);
 
-    public abstract boolean containsContentItem(ContentItem c1);
+    public boolean isEmptyPage(){
+        return user==null;
+    }
 
+    public  void upload(ContentItem c1){
+        content.add(c1);
+    }
+    public boolean remove(ContentItem c1){
+        if (content.contains(c1)) {
+            content.remove(c1);
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public boolean containsContentItem(ContentItem c1){
+        return content.contains(c1);
+    }
     public abstract void Draw();
 
 }

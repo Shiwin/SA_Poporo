@@ -1,30 +1,14 @@
 package innopolis.poporo;
 
+import java.util.ArrayList;
+
 /**
  * Created by ivan on 11.04.16.
  */
 public class StandardPage extends Page {
     public StandardPage(ContentItem c) {
-
-    }
-
-    public boolean isEmptyPage() {
-        return false;
-    }
-
-    @Override
-    public void upload(ContentItem c1) {
-
-    }
-
-    @Override
-    public void remove(ContentItem c1) {
-
-    }
-
-    @Override
-    public boolean containsContentItem(ContentItem c1) {
-        return false;
+        super.user = null;
+        super.content = new ArrayList<>();
     }
 
     @Override

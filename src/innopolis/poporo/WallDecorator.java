@@ -9,26 +9,6 @@ public class WallDecorator extends Page {
     }
 
     @Override
-    public boolean isEmptyPage() {
-        return false;
-    }
-
-    @Override
-    public void upload(ContentItem c1) {
-
-    }
-
-    @Override
-    public void remove(ContentItem c1) {
-
-    }
-
-    @Override
-    public boolean containsContentItem(ContentItem c1) {
-        return false;
-    }
-
-    @Override
     public void Draw() {
 
     }
