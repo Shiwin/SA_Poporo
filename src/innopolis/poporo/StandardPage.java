@@ -7,4 +7,20 @@ public class StandardPage {
     public StandardPage(StandardContentItem c) {
 
     }
+
+    public boolean isEmptyPage() {
+        return false;
+    }
+
+    public void upload(StandardContentItem c1) {
+
+    }
+
+    public void remove(StandardContentItem c1) {
+
+    }
+
+    public boolean containsContentItem(StandardContentItem c1) {
+        return false;
+    }
 }
