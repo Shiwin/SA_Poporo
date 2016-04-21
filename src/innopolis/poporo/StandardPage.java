@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class StandardPage extends Page {
     public StandardPage(ContentItem c) {
         super();
-        super.content.add(new StandardContentItem());
+        super.content.add(c);
     }
 
     @Override
