@@ -23,7 +23,7 @@ public class EnchantedAccountTest {
     }
 
     @Test
-    public void testClosedAccountisNull() {
+    public void testClosedAccountIsNull() {
         a.openAccount();
         a.transmit(c);
         a.closeAccount();
@@ -31,5 +31,10 @@ public class EnchantedAccountTest {
         assertFalse(a.contains(new EnchantedContentItem()));
     }
 
-
+    @Test
+    public void testTransmitContains() {
+        a.openAccount();
+        a.transmit(c);
+        assertTrue(a.contains(c));
+    }
 }

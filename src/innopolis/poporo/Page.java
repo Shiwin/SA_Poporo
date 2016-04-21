@@ -33,4 +33,11 @@ public abstract class Page {
     }
     public abstract void Draw();
 
+    public abstract void comment(ContentItem c1, ContentItem c2);
+
+    public abstract boolean isDefinedAt(ContentItem c1);
+
+    public abstract boolean has(ContentItem c1, ContentItem c2);
+
+    public abstract void uncomment(ContentItem c1, ContentItem c2);
 }

@@ -23,11 +23,20 @@ public class StandardAccountTest {
     }
 
     @Test
-    public void testClosedAccountisNull() {
+    public void testClosedAccountIsNull() {
         a.openAccount();
         a.transmit(c);
         a.closeAccount();
         assertFalse(a.contains(c));
         assertFalse(a.contains(new StandardContentItem()));
     }
+
+    @Test
+    public void testTransmitContains() {
+        a.openAccount();
+        a.transmit(c);
+        assertTrue(a.contains(c));
+    }
+
+
 }
