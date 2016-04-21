@@ -40,10 +40,11 @@ public abstract class Page {
     public abstract void Draw();
 
     public void comment(ContentItem c1, ContentItem c2){
+        c1.addContent(c2);
     }
 
     public  boolean isDefinedAt(ContentItem c1){
-        return false;
+        return content.contains(c1);
     }
 
     public  boolean has(ContentItem c1, ContentItem c2){
@@ -51,6 +52,6 @@ public abstract class Page {
     }
 
     public  void uncomment(ContentItem c1, ContentItem c4){
-
+        c1.removeContent(c4);
     }
 }

@@ -11,12 +11,14 @@ public class StandardPage extends Page {
         super.content.add(c);
     }
 
-    @Override
-    public void Draw() {
+    public StandardPage() {
 
     }
 
-
+    @Override
+    public void Draw() {
+        System.out.println("In class StandardPage");
+    }
 
 
 }
