@@ -15,23 +15,4 @@ public class EnchantedPage  extends Page{
 
     }
 
-    @Override
-    public void comment(ContentItem c1, ContentItem c2) {
-
-    }
-
-    @Override
-    public boolean isDefinedAt(ContentItem c1) {
-        return false;
-    }
-
-    @Override
-    public boolean has(ContentItem c1, ContentItem c2) {
-        return false;
-    }
-
-    @Override
-    public void uncomment(ContentItem c1, ContentItem c2) {
-
-    }
 }

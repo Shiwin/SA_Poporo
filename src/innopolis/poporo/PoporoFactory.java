@@ -9,4 +9,6 @@ public abstract class PoporoFactory {
     public abstract Page createPage();
 
     public abstract User createUser();
+
+    public abstract Account createAccount();
 }

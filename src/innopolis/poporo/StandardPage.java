@@ -7,8 +7,8 @@ import java.util.ArrayList;
  */
 public class StandardPage extends Page {
     public StandardPage(ContentItem c) {
-        super.user = null;
-        super.content = new ArrayList<>();
+        super();
+        super.content.add(new StandardContentItem());
     }
 
     @Override
@@ -16,25 +16,7 @@ public class StandardPage extends Page {
 
     }
 
-    @Override
-    public void comment(ContentItem c1, ContentItem c2) {
-        
-    }
 
-    @Override
-    public boolean isDefinedAt(ContentItem c1) {
-        return false;
-    }
-
-    @Override
-    public boolean has(ContentItem c1, ContentItem c2) {
-        return false;
-    }
-
-    @Override
-    public void uncomment(ContentItem c1, ContentItem c2) {
-
-    }
 
 
 }

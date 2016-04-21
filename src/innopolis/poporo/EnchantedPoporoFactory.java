@@ -18,4 +18,9 @@ public class EnchantedPoporoFactory extends PoporoFactory {
     public User createUser() {
         return null;
     }
+
+    @Override
+    public Account createAccount() {
+        return null;
+    }
 }
