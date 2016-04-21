@@ -37,4 +37,14 @@ public class WallDecorator extends Decorator {
     public boolean isDefinedAt(ContentItem c1) {
         return super.page.isDefinedAt(c1);
     }
+
+    @Override
+    public boolean isEmptyPage() {
+        return super.isEmptyPage()&&page==null;
+    }
+
+    @Override
+    public boolean containsContentItem(ContentItem c1) {
+        return super.containsContentItem(c1)&&page.containsContentItem(c1);
+    }
 }
