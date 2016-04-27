@@ -28,7 +28,6 @@ public abstract class Page {
     public boolean remove(ContentItem c1){
         if(content.size()>1){
             return content.remove(c1);
-
         }
         return false;
     }
@@ -47,7 +46,7 @@ public abstract class Page {
         return content.contains(c1);
     }
 
-    public  boolean has(ContentItem c1, ContentItem c2){
+    public Boolean has(ContentItem c1, ContentItem c2){
         return false;
     }
 
